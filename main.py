@@ -1,15 +1,16 @@
+"""Import turtle library and classes"""
 from turtle import Screen
 from paddle import Paddle
 from ball import Ball
 from scoreboard import Scoreboard
 import time
-
+"""Set up the screen"""
 screen = Screen()
 screen.bgcolor("black")
 screen.setup(width=800, height=600)
 screen.title("Pong game")
 screen.tracer(0)
-
+"""Set up the paddles position"""
 r_paddle = Paddle((350, 0))
 l_paddle = Paddle((-350, 0))
 ball = Ball()
